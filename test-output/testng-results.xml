@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-08T23:51:21 IST" name="Travel Automation Suite" finished-at="2025-11-08T23:53:06 IST" duration-ms="104854">
+    <groups>
+    </groups>
+    <test started-at="2025-11-08T23:51:21 IST" name="Flight Booking Tests" finished-at="2025-11-08T23:53:06 IST" duration-ms="104854">
+      <class name="com.travel.tests.FlightBookingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.travel.tests.FlightBookingTest@1165b38]" started-at="2025-11-08T23:51:21 IST" name="setup" finished-at="2025-11-08T23:51:25 IST" duration-ms="3688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFlightSearchAndPriceComparison()[pri:1, instance:com.travel.tests.FlightBookingTest@1165b38]" started-at="2025-11-08T23:51:25 IST" name="testFlightSearchAndPriceComparison" finished-at="2025-11-08T23:52:11 IST" duration-ms="46142" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of any elements located by By.xpath: //div[contains(@class,'listingCard')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\Susil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54670}, goog:processID: 19264, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54670/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa2b768030cc64e083235a49096e8e97]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.xpath: //div[contains(@class,'listingCard')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\Susil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54670}, goog:processID: 19264, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54670/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa2b768030cc64e083235a49096e8e97
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.travel.base.BasePage.getElements(BasePage.java:37)
+at com.travel.pages.FlightResultsPage.getAllFlights(FlightResultsPage.java:33)
+at com.travel.pages.FlightResultsPage.getCheapestFlight(FlightResultsPage.java:56)
+at com.travel.tests.FlightBookingTest.testFlightSearchAndPriceComparison(FlightBookingTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearchAndPriceComparison -->
+        <test-method signature="testMultiTabNavigation()[pri:2, instance:com.travel.tests.FlightBookingTest@1165b38]" started-at="2025-11-08T23:52:11 IST" name="testMultiTabNavigation" finished-at="2025-11-08T23:52:13 IST" duration-ms="2282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiTabNavigation -->
+        <test-method signature="testFilterFlightsByAirline()[pri:3, instance:com.travel.tests.FlightBookingTest@1165b38]" started-at="2025-11-08T23:52:13 IST" name="testFilterFlightsByAirline" finished-at="2025-11-08T23:53:05 IST" duration-ms="52139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterFlightsByAirline -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.travel.tests.FlightBookingTest@1165b38]" started-at="2025-11-08T23:53:05 IST" name="tearDown" finished-at="2025-11-08T23:53:06 IST" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.travel.tests.FlightBookingTest -->
+    </test> <!-- Flight Booking Tests -->
+  </suite> <!-- Travel Automation Suite -->
+</testng-results>
